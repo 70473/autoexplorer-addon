@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autoexplorer-addon",
+  "version": "1.0.0",
+  "name": "AutoExplorer Addon",
+  "description": "A Meteor Client addon that automates world exploration with Baritone and logs coordinates.",
+  "authors": ["YourName"],
+  "contact": {
+    "homepage": "https://github.com/yourname/autoexplorer-addon",
+    "sources":  "https://github.com/yourname/autoexplorer-addon"
+  },
+  "license": "MIT",
+
+  "environment": "client",
+
+  "entrypoints": {
+    "meteor-client:addon": [
+      "com.example.autoexplorer.AutoExplorerAddon"
+    ]
+  },
+
+  "mixins": [],
+
+  "depends": {
+    "fabricloader":  ">=0.15.0",
+    "minecraft":     "~1.21.4",
+    "java":          ">=21",
+    "meteor-client": "*"
+  }
+}
